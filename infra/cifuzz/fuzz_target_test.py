@@ -33,7 +33,7 @@ import test_helpers
 import workspace_utils
 
 # NOTE: This integration test relies on
-# https://github.com/google/oss-fuzz/tree/master/projects/example project.
+# https://github.com/ylobankov/oss-fuzz/tree/master/projects/example project.
 EXAMPLE_PROJECT = 'example'
 
 # An example fuzzer that triggers an error.

@@ -17,7 +17,7 @@
 FROM gcr.io/oss-fuzz-base/base-runner
 RUN apt-get update && apt-get install -y valgrind zip
 
-# Installing GDB 12, re https://github.com/google/oss-fuzz/issues/7513.
+# Installing GDB 12, re https://github.com/ylobankov/oss-fuzz/issues/7513.
 RUN apt-get install -y build-essential libgmp-dev && \
     wget https://ftp.gnu.org/gnu/gdb/gdb-12.1.tar.xz && \
     tar -xf gdb-12.1.tar.xz && cd gdb-12.1 && ./configure &&  \

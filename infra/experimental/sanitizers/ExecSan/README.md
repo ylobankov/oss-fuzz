@@ -1,3 +1,3 @@
 # Moved
 
-This has moved to <https://github.com/google/oss-fuzz/tree/master/infra/experimental/SystemSan>.
+This has moved to <https://github.com/ylobankov/oss-fuzz/tree/master/infra/experimental/SystemSan>.

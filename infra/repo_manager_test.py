@@ -24,7 +24,7 @@ import utils
 
 # pylint: disable=protected-access
 
-OSS_FUZZ_REPO_URL = 'https://github.com/google/oss-fuzz'
+OSS_FUZZ_REPO_URL = 'https://github.com/ylobankov/oss-fuzz'
 
 
 @contextlib.contextmanager

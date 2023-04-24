@@ -59,7 +59,7 @@ for DOT_HG_DIR in $(find $PATHS_TO_SCAN -name ".hg" -type d); do
 done
 
 if [ "${OSSFUZZ_REVISION-}" != "" ]; then
-  jq_inplace $SRCMAP ".\"/src\" = { type: \"git\", url: \"https://github.com/google/oss-fuzz.git\", rev: \"$OSSFUZZ_REVISION\" }"
+  jq_inplace $SRCMAP ".\"/src\" = { type: \"git\", url: \"https://github.com/ylobankov/oss-fuzz.git\", rev: \"$OSSFUZZ_REVISION\" }"
 fi
 
 cat $SRCMAP

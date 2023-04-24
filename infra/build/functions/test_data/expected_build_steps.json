@@ -2,7 +2,7 @@
   {
     "args": [
       "clone",
-      "https://github.com/google/oss-fuzz.git",
+      "https://github.com/ylobankov/oss-fuzz.git",
       "--depth",
       "1"
     ],

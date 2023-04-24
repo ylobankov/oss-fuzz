@@ -69,7 +69,7 @@ def is_shell_script(filepath):
 
 def find_fuzz_targets(directory):
   """Returns paths to fuzz targets in |directory|."""
-  # TODO(https://github.com/google/oss-fuzz/issues/4585): Use libClusterFuzz for
+  # TODO(https://github.com/ylobankov/oss-fuzz/issues/4585): Use libClusterFuzz for
   # this.
   fuzz_targets = []
   for filename in os.listdir(directory):

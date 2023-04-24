@@ -45,7 +45,7 @@ RUN export PYTHON_DEPS="\
     cd .. && \
     rm -r /tmp/Python-$PYTHON_VERSION.tar.xz /tmp/Python-$PYTHON_VERSION && \
     rm -rf /usr/local/lib/python3.8/test && \
-    apt-get remove -y $PYTHON_DEPS # https://github.com/google/oss-fuzz/issues/3888
+    apt-get remove -y $PYTHON_DEPS # https://github.com/ylobankov/oss-fuzz/issues/3888
 
 # Install six for Bazel rules.
 RUN unset CFLAGS CXXFLAGS && pip3 install -v --no-cache-dir \
@@ -76,7 +76,7 @@ ENV SANITIZER_FLAGS_introspector "-O0 -flto -fno-inline-functions -fuse-ld=gold 
 ENV SANITIZER_FLAGS_coverage ""
 
 # We use unsigned-integer-overflow as an additional coverage signal and have to
-# suppress error messages. See https://github.com/google/oss-fuzz/issues/910.
+# suppress error messages. See https://github.com/ylobankov/oss-fuzz/issues/910.
 ENV UBSAN_OPTIONS="silence_unsigned_overflow=1"
 
 # To suppress warnings from binaries running during compilation.

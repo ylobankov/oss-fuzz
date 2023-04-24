@@ -35,7 +35,7 @@ def get_comments(pull_request_number):
   """Returns comments on the GitHub Pull request referenced by
   |pull_request_number|."""
   github_obj = github.Github()
-  repo = github_obj.get_repo('google/oss-fuzz')
+  repo = github_obj.get_repo('ylobankov/oss-fuzz')
   pull = repo.get_pull(pull_request_number)
   pull_comments = list(pull.get_comments())
   issue = repo.get_issue(pull_request_number)

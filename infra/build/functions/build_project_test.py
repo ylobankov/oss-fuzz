@@ -55,7 +55,7 @@ class TestRequestCoverageBuilds(fake_filesystem_unittest.TestCase):
         '  - x86_64\n'
         '  - i386\n'
         '  - aarch64\n'
-        'main_repo: https://github.com/google/oss-fuzz.git\n')
+        'main_repo: https://github.com/ylobankov/oss-fuzz.git\n')
     self.fs.create_dir(test_utils.PROJECT_DIR)
     test_utils.create_project_data(test_utils.PROJECT, project_yaml_contents)
 

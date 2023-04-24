@@ -18,5 +18,5 @@ classifiers = [
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/google/oss-fuzz/tree/master/infra/sanitizers/pysecsan"
-"Bug Tracker" = "https://github.com/google/oss-fuzz/issues"
+"Homepage" = "https://github.com/ylobankov/oss-fuzz/tree/master/infra/sanitizers/pysecsan"
+"Bug Tracker" = "https://github.com/ylobankov/oss-fuzz/issues"

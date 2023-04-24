@@ -18,7 +18,7 @@ a python API and manage the current state of the git repo.
 
   Typical usage example:
 
-    r_man =  RepoManager('https://github.com/google/oss-fuzz.git')
+    r_man =  RepoManager('https://github.com/ylobankov/oss-fuzz.git')
     r_man.checkout('5668cc422c2c92d38a370545d3591039fb5bb8d4')
 """
 import datetime

@@ -222,7 +222,7 @@ def get_env(fuzzing_language, build):
       'SANITIZER': build.sanitizer,
       'ARCHITECTURE': build.architecture,
       # Set HOME so that it doesn't point to a persisted volume (see
-      # https://github.com/google/oss-fuzz/issues/6035).
+      # https://github.com/ylobankov/oss-fuzz/issues/6035).
       'HOME': '/root',
       'OUT': build.out,
   }

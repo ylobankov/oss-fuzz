@@ -22,7 +22,7 @@ FROM $parent_image
 
 ENV DEBIAN_FRONTEND noninteractive
 # Install tzadata to match ClusterFuzz
-# (https://github.com/google/oss-fuzz/issues/9280).
+# (https://github.com/ylobankov/oss-fuzz/issues/9280).
 
 RUN apt-get update && \
     apt-get upgrade -y && \

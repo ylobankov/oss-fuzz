@@ -29,7 +29,7 @@ import workspace_utils
 # pylint: disable=protected-access
 
 # NOTE: This integration test relies on
-# https://github.com/google/oss-fuzz/tree/master/projects/example project.
+# https://github.com/ylobankov/oss-fuzz/tree/master/projects/example project.
 EXAMPLE_PROJECT = 'example'
 
 EXAMPLE_FILE_CHANGED = 'test.txt'

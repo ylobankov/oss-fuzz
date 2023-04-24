@@ -55,7 +55,7 @@ class OssFuzzRepo:
   """OSS-Fuzz repo."""
 
   _MASTER_ZIP_LINK = (
-      'https://github.com/google/oss-fuzz/archive/refs/heads/master.zip')
+      'https://github.com/ylobankov/oss-fuzz/archive/refs/heads/master.zip')
 
   def __init__(self, out_dir):
     with urllib.request.urlopen(self._MASTER_ZIP_LINK) as response:

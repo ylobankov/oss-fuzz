@@ -152,7 +152,7 @@ function check_startup_crash {
       CHECK_PASSED=1
     fi
   elif [[ "$FUZZING_ENGINE" = dataflow ]]; then
-    # TODO(https://github.com/google/oss-fuzz/issues/1632): add check for
+    # TODO(https://github.com/ylobankov/oss-fuzz/issues/1632): add check for
     # binaries compiled with dataflow engine when the interface becomes stable.
     CHECK_PASSED=1
   else

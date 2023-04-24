@@ -56,12 +56,12 @@ mkdir $SRC/chromium_tools
 cd $SRC/chromium_tools
 git clone https://chromium.googlesource.com/chromium/src/tools/clang
 cd clang
-# Pin clang due to https://github.com/google/oss-fuzz/issues/7617
+# Pin clang due to https://github.com/ylobankov/oss-fuzz/issues/7617
 git checkout 946a41a51f44207941b3729a0733dfc1e236644e
 
 # To allow for manual downgrades. Set to 0 to use Chrome's clang version (i.e.
 # *not* force a manual downgrade). Set to 1 to force a manual downgrade.
-# DO NOT CHANGE THIS UNTIL https://github.com/google/oss-fuzz/issues/7273 is
+# DO NOT CHANGE THIS UNTIL https://github.com/ylobankov/oss-fuzz/issues/7273 is
 # RESOLVED.
 FORCE_OUR_REVISION=1
 LLVM_REVISION=$(grep -Po "CLANG_REVISION = '\K([^']+)" scripts/update.py)
@@ -151,7 +151,7 @@ function free_disk_space {
     rm -rf $LLVM_SRC $SRC/chromium_tools
     apt-get autoremove --purge -y $LLVM_DEP_PACKAGES
     # Delete unneeded parts of LLVM to reduce image size.
-    # See https://github.com/google/oss-fuzz/issues/5170
+    # See https://github.com/ylobankov/oss-fuzz/issues/5170
     LLVM_TOOLS_TMPDIR=/tmp/llvm-tools
     mkdir $LLVM_TOOLS_TMPDIR
     # Move binaries with llvm- prefix that we want into LLVM_TOOLS_TMPDIR.
@@ -244,7 +244,7 @@ rm -rf $WORK/i386
 mkdir -p $WORK/msan
 cd $WORK/msan
 
-# https://github.com/google/oss-fuzz/issues/1099
+# https://github.com/ylobankov/oss-fuzz/issues/1099
 cat <<EOF > $WORK/msan/blocklist.txt
 fun:__gxx_personality_*
 EOF

@@ -33,7 +33,7 @@ import repo_manager
 import test_helpers
 
 # NOTE: This integration test relies on
-# https://github.com/google/oss-fuzz/tree/master/projects/example project.
+# https://github.com/ylobankov/oss-fuzz/tree/master/projects/example project.
 EXAMPLE_PROJECT = 'example'
 
 # Location of data used for testing.

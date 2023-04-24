@@ -254,7 +254,7 @@ class FuzzTarget:  # pylint: disable=too-many-instance-attributes
     # Delete the seed corpus, corpus, and fuzz target.
     for corpus_path in [self.latest_corpus_path, self.pruned_corpus_path]:
       # Use ignore_errors=True to fix
-      # https://github.com/google/oss-fuzz/issues/5383.
+      # https://github.com/ylobankov/oss-fuzz/issues/5383.
       shutil.rmtree(corpus_path, ignore_errors=True)
 
     target_seed_corpus_path = self.target_path + '_seed_corpus.zip'
@@ -344,7 +344,7 @@ class FuzzTarget:  # pylint: disable=too-many-instance-attributes
     except ReproduceError as error:
       logging.error('Could not check for crash reproducibility.'
                     'Please file an issue:'
-                    'https://github.com/google/oss-fuzz/issues/new.')
+                    'https://github.com/ylobankov/oss-fuzz/issues/new.')
       raise error
 
     if not reproducible_on_code_change:
