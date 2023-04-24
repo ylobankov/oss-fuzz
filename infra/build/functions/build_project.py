@@ -54,7 +54,7 @@ PROJECTS_DIR = os.path.abspath(
     os.path.join(__file__, os.path.pardir, os.path.pardir, os.path.pardir,
                  os.path.pardir, 'projects'))
 
-DEFAULT_OSS_FUZZ_REPO = 'https://github.com/google/oss-fuzz.git'
+DEFAULT_OSS_FUZZ_REPO = 'https://github.com/ylobankov/oss-fuzz.git'
 Config = collections.namedtuple(
     'Config',
     ['testing', 'test_image_suffix', 'repo', 'branch', 'parallel', 'upload'],
